@@ -31,7 +31,7 @@ html, body{
 }
 
 /* ESTILOS PARA DESKTOP*/
-@media only screen and (min-width: 1080px) {
+@media only screen and (max-width: 1080px) {
   .card-grid{
     display: flex;
     flex-direction: row;
