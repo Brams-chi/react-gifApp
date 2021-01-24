@@ -6,7 +6,7 @@ export const AddCategory = ({setCategories} ) =>{
     const [inputValue, setInput] = useState('');
 
     const handleEvent = (e) =>{
-        setInput(e.target.value);
+        setInput(e.target.value.toUpperCase());
     }
     const handleSubmit = (e) =>{
         e.preventDefault();
@@ -17,19 +17,20 @@ export const AddCategory = ({setCategories} ) =>{
         
     }
     return (
-        <>
-            <h3> Add Category</h3>
+        <div className="add_category_content">
+            <p className = "category_message"> Agrega una categoría:</p>
 
             <form onSubmit = { handleSubmit}>
                 <input 
-                        type = "text"
-                        value = { inputValue}
-                        onChange={handleEvent}
+                    className="input_class"
+                    type = "text"
+                    value = { inputValue}
+                    onChange={handleEvent}
                 />
             </form>
 
 
-        </>
+        </div>
     )
     
 }
