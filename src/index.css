@@ -7,6 +7,31 @@ html, body{
   margin:0;
   background-color: #fbff004d;
 }
+@media only screen and (max-width: 500px) {
+  .card-grid{
+    flex-grow: 1 !important;
+    justify-content: center;
+  }
+  .card{
+    width: 90% !important;
+  }
+  .add_category_content {
+    flex-direction: column !important;
+    width: 80% !important;
+    margin: 0px 10% !important;
+    height: 100px !important;
+  }
+  .add_category_content .category_message {
+    width: 65% !important;
+    margin: 0px 10% !important;
+  }
+  .add_category_content .input_class {
+    width: 80% !important;
+    padding: 2px;
+    margin: 20px 9%;
+  }
+
+}
 .card-grid{
   display: flex;
   flex-direction: row;
